@@ -11,8 +11,8 @@ import jm.task.core.jdbc.util.Util;
 public class Main {
     public static void main(String[] args) {
 
-        UserDaoHibernateImpl userDaoHibernate = new UserDaoHibernateImpl();
-        UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
+        UserDao userDaoHibernate = new UserDaoHibernateImpl();
+        UserDao userDaoJDBC = new UserDaoJDBCImpl();
 
         UserService userService = new UserServiceImpl(userDaoHibernate);
 
